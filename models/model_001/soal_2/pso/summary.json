@@ -1,0 +1,26 @@
+{
+  "problem": "soal_2",
+  "method": "pso",
+  "true_a": 0.22,
+  "true_b": 4.4,
+  "best_a": 0.2222609903159647,
+  "best_b": 4.414118431970581,
+  "best_loss": 0.0043344695181413454,
+  "initial_a": 4.3,
+  "initial_b": -1.7,
+  "steps": 81,
+  "population": 40,
+  "iterations": 80,
+  "optimizer_config": {
+    "population": 40,
+    "iterations": 80,
+    "w": 0.5089670440319035,
+    "c1": 2.0215783939545737,
+    "c2": 1.8137998449879023,
+    "init_spread": 0.5969317596820686,
+    "initial_params": [
+      4.3,
+      -1.7
+    ]
+  }
+}

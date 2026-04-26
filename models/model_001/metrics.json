@@ -1,0 +1,232 @@
+{
+  "results": [
+    {
+      "problem": "soal_1",
+      "method": "pso",
+      "true_a": 1.85,
+      "true_b": 1.73,
+      "best_a": 1.8498467468641064,
+      "best_b": 1.7298755068871914,
+      "best_loss": 0.003032241768038743,
+      "initial_a": 1.95,
+      "initial_b": 1.95,
+      "steps": 81,
+      "population": 40,
+      "iterations": 80,
+      "optimizer_config": {
+        "population": 40,
+        "iterations": 80,
+        "w": 0.5181446103835434,
+        "c1": 1.9714366324040513,
+        "c2": 0.5192815603965055,
+        "init_spread": 0.3603857079614,
+        "initial_params": [
+          1.95,
+          1.95
+        ]
+      },
+      "optuna": {
+        "best_value": 0.1299094919984541,
+        "best_params": {
+          "w": 0.5181446103835434,
+          "c1": 1.9714366324040513,
+          "c2": 0.5192815603965055,
+          "init_spread": 0.3603857079614
+        },
+        "n_trials": 36,
+        "configured_n_trials": 36
+      },
+      "selection_policy": "longest_converged_if_any_else_best_loss"
+    },
+    {
+      "problem": "soal_1",
+      "method": "ga",
+      "true_a": 1.85,
+      "true_b": 1.73,
+      "best_a": 0.002586813944966752,
+      "best_b": 0.11322058339307851,
+      "best_loss": 0.18413409605958586,
+      "initial_a": 0.2,
+      "initial_b": 0.25,
+      "steps": 81,
+      "population": 40,
+      "iterations": 80,
+      "optimizer_config": {
+        "population": 40,
+        "iterations": 80,
+        "elite_ratio": 0.18847649354622703,
+        "mutation_rate": 0.36269021290184,
+        "mutation_scale": 0.13858366811505038,
+        "init_spread": 0.36064086241259125,
+        "initial_params": [
+          0.2,
+          0.25
+        ]
+      },
+      "optuna": {
+        "best_value": 0.12991013173785415,
+        "best_params": {
+          "elite_ratio": 0.18847649354622703,
+          "mutation_rate": 0.36269021290184,
+          "mutation_scale": 0.13858366811505038,
+          "init_spread": 0.36064086241259125
+        },
+        "n_trials": 80,
+        "configured_n_trials": 80
+      },
+      "selection_policy": "longest_converged_if_any_else_best_loss"
+    },
+    {
+      "problem": "soal_1",
+      "method": "gradient_autograd",
+      "true_a": 1.85,
+      "true_b": 1.73,
+      "best_a": 1.95,
+      "best_b": 1.95,
+      "best_loss": 0.37557965929072723,
+      "initial_a": 1.95,
+      "initial_b": 1.95,
+      "steps": 241,
+      "population": null,
+      "iterations": 240,
+      "optimizer_config": {
+        "iterations": 240,
+        "learning_rate": 0.029192459480597822,
+        "beta1": 0.8585722791902725,
+        "beta2": 0.9165155920486612,
+        "epsilon": 1.2568390561789417e-08,
+        "initial_params": [
+          1.95,
+          1.95
+        ]
+      },
+      "optuna": {
+        "best_value": 0.2526521464038657,
+        "best_params": {
+          "learning_rate": 0.029192459480597822,
+          "beta1": 0.8585722791902725,
+          "beta2": 0.9165155920486612,
+          "epsilon": 1.2568390561789417e-08,
+          "iterations": 240
+        },
+        "n_trials": 80,
+        "configured_n_trials": 80
+      },
+      "selection_policy": "longest_converged_if_any_else_best_loss"
+    },
+    {
+      "problem": "soal_2",
+      "method": "pso",
+      "true_a": 0.22,
+      "true_b": 4.4,
+      "best_a": 0.2222609903159647,
+      "best_b": 4.414118431970581,
+      "best_loss": 0.0043344695181413454,
+      "initial_a": 4.3,
+      "initial_b": -1.7,
+      "steps": 81,
+      "population": 40,
+      "iterations": 80,
+      "optimizer_config": {
+        "population": 40,
+        "iterations": 80,
+        "w": 0.5089670440319035,
+        "c1": 2.0215783939545737,
+        "c2": 1.8137998449879023,
+        "init_spread": 0.5969317596820686,
+        "initial_params": [
+          4.3,
+          -1.7
+        ]
+      },
+      "optuna": {
+        "best_value": 0.0732289262037988,
+        "best_params": {
+          "w": 0.5089670440319035,
+          "c1": 2.0215783939545737,
+          "c2": 1.8137998449879023,
+          "init_spread": 0.5969317596820686
+        },
+        "n_trials": 12,
+        "configured_n_trials": 12
+      },
+      "selection_policy": "longest_converged_if_any_else_best_loss"
+    },
+    {
+      "problem": "soal_2",
+      "method": "ga",
+      "true_a": 0.22,
+      "true_b": 4.4,
+      "best_a": 0.2222581859189727,
+      "best_b": 4.414091058278636,
+      "best_loss": 0.0043344696136538245,
+      "initial_a": 4.3,
+      "initial_b": -1.7,
+      "steps": 81,
+      "population": 40,
+      "iterations": 80,
+      "optimizer_config": {
+        "population": 40,
+        "iterations": 80,
+        "elite_ratio": 0.22083191147455117,
+        "mutation_rate": 0.3589046788421518,
+        "mutation_scale": 0.5393271795679677,
+        "init_spread": 0.1865846777799926,
+        "initial_params": [
+          4.3,
+          -1.7
+        ]
+      },
+      "optuna": {
+        "best_value": 0.004334469518216882,
+        "best_params": {
+          "elite_ratio": 0.22083191147455117,
+          "mutation_rate": 0.3589046788421518,
+          "mutation_scale": 0.5393271795679677,
+          "init_spread": 0.1865846777799926
+        },
+        "n_trials": 12,
+        "configured_n_trials": 12
+      },
+      "selection_policy": "longest_converged_if_any_else_best_loss"
+    },
+    {
+      "problem": "soal_2",
+      "method": "gradient_autograd",
+      "true_a": 0.22,
+      "true_b": 4.4,
+      "best_a": 0.2222610732533542,
+      "best_b": 4.414118522060545,
+      "best_loss": 0.004334469518145941,
+      "initial_a": 4.3,
+      "initial_b": -1.7,
+      "steps": 261,
+      "population": null,
+      "iterations": 260,
+      "optimizer_config": {
+        "iterations": 260,
+        "learning_rate": 0.05244708230974689,
+        "beta1": 0.8096041669462537,
+        "beta2": 0.9655866166245254,
+        "epsilon": 4.157296643499924e-10,
+        "initial_params": [
+          4.3,
+          -1.7
+        ]
+      },
+      "optuna": {
+        "best_value": 0.4505715052362221,
+        "best_params": {
+          "learning_rate": 0.05244708230974689,
+          "beta1": 0.8096041669462537,
+          "beta2": 0.9655866166245254,
+          "epsilon": 4.157296643499924e-10,
+          "iterations": 260
+        },
+        "n_trials": 12,
+        "configured_n_trials": 12
+      },
+      "selection_policy": "longest_converged_if_any_else_best_loss"
+    }
+  ]
+}

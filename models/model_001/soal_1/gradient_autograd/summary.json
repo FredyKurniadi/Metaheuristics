@@ -1,0 +1,25 @@
+{
+  "problem": "soal_1",
+  "method": "gradient_autograd",
+  "true_a": 1.85,
+  "true_b": 1.73,
+  "best_a": 1.95,
+  "best_b": 1.95,
+  "best_loss": 0.37557965929072723,
+  "initial_a": 1.95,
+  "initial_b": 1.95,
+  "steps": 241,
+  "population": null,
+  "iterations": 240,
+  "optimizer_config": {
+    "iterations": 240,
+    "learning_rate": 0.029192459480597822,
+    "beta1": 0.8585722791902725,
+    "beta2": 0.9165155920486612,
+    "epsilon": 1.2568390561789417e-08,
+    "initial_params": [
+      1.95,
+      1.95
+    ]
+  }
+}

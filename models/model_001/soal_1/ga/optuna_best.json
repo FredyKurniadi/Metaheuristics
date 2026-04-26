@@ -1,0 +1,11 @@
+{
+  "best_value": 0.12991013173785415,
+  "best_params": {
+    "elite_ratio": 0.18847649354622703,
+    "mutation_rate": 0.36269021290184,
+    "mutation_scale": 0.13858366811505038,
+    "init_spread": 0.36064086241259125
+  },
+  "n_trials": 80,
+  "configured_n_trials": 80
+}

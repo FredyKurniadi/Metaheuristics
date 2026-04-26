@@ -1,0 +1,151 @@
+seed: 42
+output:
+  models_dir: models
+
+selection:
+  convergence_loss_threshold: 0.02
+  convergence_patience: 10
+  convergence_delta_tol: 1.0e-5
+
+tuning:
+  enabled: true
+  n_trials: 12
+  n_trials_by_problem:
+    soal_1: 36
+    soal_2: 12
+  n_trials_by_problem_method:
+    soal_1:
+      ga: 80
+      gradient_autograd: 80
+  timeout_sec: null
+  seed_stride: 100
+  sampler_seed_offset: 1000
+  search_space:
+    pso:
+      w:
+        type: float
+        low: 0.40
+        high: 0.95
+      c1:
+        type: float
+        low: 0.5
+        high: 2.5
+      c2:
+        type: float
+        low: 0.5
+        high: 2.5
+      init_spread:
+        type: float
+        low: 0.15
+        high: 1.20
+    ga:
+      elite_ratio:
+        type: float
+        low: 0.05
+        high: 0.40
+      mutation_rate:
+        type: float
+        low: 0.05
+        high: 0.50
+      mutation_scale:
+        type: float
+        low: 0.02
+        high: 1.20
+      init_spread:
+        type: float
+        low: 0.15
+        high: 1.40
+    gradient_autograd:
+      learning_rate:
+        type: float
+        low: 0.0005
+        high: 0.08
+        log: true
+      beta1:
+        type: float
+        low: 0.80
+        high: 0.99
+      beta2:
+        type: float
+        low: 0.90
+        high: 0.9999
+      epsilon:
+        type: float
+        low: 1.0e-10
+        high: 1.0e-6
+        log: true
+      iterations:
+        type: int
+        low: 120
+        high: 260
+        step: 20
+
+data:
+  num_samples: 240
+  x_range_default: [-6.0, 6.0]
+  soal_1_x_mode: one_period
+  soal_1_x_start: 0.0
+  soal_1_period_max_denominator: 120
+  noise:
+    type: gaussian
+    params:
+      mean: 0.0
+      std: 0.06
+
+visualization:
+  normalization: minmax
+  fps: 12
+
+problems:
+  soal_1:
+    true_params:
+      a: 1.85
+      b: 1.73
+    tuning_initial_params:
+      a: 0.12
+      b: 0.18
+    evaluation_initial_params:
+      - { a: 0.10, b: 1.90 }
+      - { a: 1.90, b: 0.10 }
+      - { a: 0.20, b: 0.25 }
+      - { a: 1.95, b: 1.95 }
+    bounds:
+      a: [0.0, 2.0]
+      b: [0.0, 2.0]
+  soal_2:
+    true_params:
+      a: 0.22
+      b: 4.40
+    tuning_initial_params:
+      a: -2.50
+      b: -4.20
+    evaluation_initial_params:
+      - { a: -1.80, b: 4.20 }
+      - { a: 4.30, b: -1.70 }
+      - { a: -2.20, b: 3.80 }
+      - { a: 3.80, b: 3.60 }
+    bounds:
+      a: [-5.0, 5.0]
+      b: [-5.0, 5.0]
+
+optimizers:
+  pso:
+    population: 40
+    iterations: 80
+    w: 0.72
+    c1: 1.6
+    c2: 1.6
+    init_spread: 0.35
+  ga:
+    population: 40
+    iterations: 80
+    elite_ratio: 0.2
+    mutation_rate: 0.15
+    mutation_scale: 0.08
+    init_spread: 0.45
+  gradient_autograd:
+    iterations: 180
+    learning_rate: 0.03
+    beta1: 0.9
+    beta2: 0.999
+    epsilon: 1.0e-08

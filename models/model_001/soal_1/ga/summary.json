@@ -1,0 +1,26 @@
+{
+  "problem": "soal_1",
+  "method": "ga",
+  "true_a": 1.85,
+  "true_b": 1.73,
+  "best_a": 0.002586813944966752,
+  "best_b": 0.11322058339307851,
+  "best_loss": 0.18413409605958586,
+  "initial_a": 0.2,
+  "initial_b": 0.25,
+  "steps": 81,
+  "population": 40,
+  "iterations": 80,
+  "optimizer_config": {
+    "population": 40,
+    "iterations": 80,
+    "elite_ratio": 0.18847649354622703,
+    "mutation_rate": 0.36269021290184,
+    "mutation_scale": 0.13858366811505038,
+    "init_spread": 0.36064086241259125,
+    "initial_params": [
+      0.2,
+      0.25
+    ]
+  }
+}

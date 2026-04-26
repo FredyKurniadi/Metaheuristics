@@ -1,0 +1,50 @@
+{
+  "criterion": "longest_converged_if_any_else_best_loss",
+  "selection_config": {
+    "convergence_loss_threshold": 0.02,
+    "convergence_patience": 10,
+    "convergence_delta_tol": 1e-05
+  },
+  "selected_candidate": {
+    "candidate_index": 3,
+    "initial_a": 1.95,
+    "initial_b": 1.95,
+    "is_converged": false,
+    "convergence_step": null,
+    "best_loss": 0.003032241768038743
+  },
+  "all_candidates": [
+    {
+      "candidate_index": 0,
+      "initial_a": 0.1,
+      "initial_b": 1.9,
+      "is_converged": false,
+      "convergence_step": null,
+      "best_loss": 0.1925948333460145
+    },
+    {
+      "candidate_index": 1,
+      "initial_a": 1.9,
+      "initial_b": 0.1,
+      "is_converged": false,
+      "convergence_step": null,
+      "best_loss": 0.36776194865761436
+    },
+    {
+      "candidate_index": 2,
+      "initial_a": 0.2,
+      "initial_b": 0.25,
+      "is_converged": false,
+      "convergence_step": null,
+      "best_loss": 0.18269239657251143
+    },
+    {
+      "candidate_index": 3,
+      "initial_a": 1.95,
+      "initial_b": 1.95,
+      "is_converged": false,
+      "convergence_step": null,
+      "best_loss": 0.003032241768038743
+    }
+  ]
+}

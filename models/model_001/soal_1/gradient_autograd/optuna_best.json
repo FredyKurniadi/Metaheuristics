@@ -1,0 +1,12 @@
+{
+  "best_value": 0.2526521464038657,
+  "best_params": {
+    "learning_rate": 0.029192459480597822,
+    "beta1": 0.8585722791902725,
+    "beta2": 0.9165155920486612,
+    "epsilon": 1.2568390561789417e-08,
+    "iterations": 240
+  },
+  "n_trials": 80,
+  "configured_n_trials": 80
+}
